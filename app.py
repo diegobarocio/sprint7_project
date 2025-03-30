@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-player_data = pd.read_csv('euro2024_players.csv')
-')
+player_data = pd.read_csv(
+    'data/euro2024_players.csv')
 
 # Limpiar un poco los datos
 
@@ -28,7 +28,8 @@ if hist_button:
 
     st.plotly_chart(fig, use_container_width=True)
 
-    scatter_button = st.button('Construir gráfico de dispersión')
+# Hacer un botón que abra un gráfico de dispersión
+scatter_button = st.button('Construir gráfico de dispersión')
 
 if scatter_button:
     st.write(
