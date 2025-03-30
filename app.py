@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-player_data = pd.read_csv('player_data.csv')
+player_data = pd.read_csv('euro2024_players.csv')
+')
 
 # Limpiar un poco los datos
 
